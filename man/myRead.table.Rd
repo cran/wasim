@@ -14,18 +14,9 @@ myRead.table(name, subcatchments, has_stat, ts.length, na.values)
   \item{has_stat}{ boolean indicating wheter statistics column exists}
   \item{na.values}{ String which identifies NA }
 }
-\details{
-}
 \value{
   A table of dimension dim=c(subcatchments+1,ts.length). The last column contains the statistics column if existing.
 }
-\references{  }
 \author{ Dominik Reusser}
-\note{ 
-
-}
-\seealso{  }
-\examples{
-}
 \keyword{ file }
 \keyword{ utilities }

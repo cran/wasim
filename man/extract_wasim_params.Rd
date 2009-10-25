@@ -21,11 +21,7 @@ params=extract_wasim_params(wasim_param_file,param_list)
 \value{
   Dataframe params contains the fields specified in param\_list and their respective values.
 }
-\references{  }
 \author{ Till Francke }
-\seealso{  }
-\examples{
-}
 
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the

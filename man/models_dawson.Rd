@@ -17,8 +17,6 @@
     \item{\code{Model.D...High.Flow}}{a numeric vector}
   }
 }
-\details{
-}
 \source{
 \url{https://co-public.lboro.ac.uk/cocwd/HydroTest/index.html}
 }

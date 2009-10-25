@@ -7,8 +7,5 @@
 }
 \usage{data.types}
 \format{data.frame}
-\source{}
-\references{
-}
 \keyword{utilities}
 \keyword{file}

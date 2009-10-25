@@ -13,15 +13,10 @@ line_sumrain(xdata, cum_sum_rain, theMax, ...)
   \item{theMax}{ The maximum of the y-axis}
   \item{\dots}{ additional arguments passed to \code{lines} }
 }
-\details{
-}
 \value{
  Used for its side effect
 }
-\references{ }
 \author{ Dominik Reusser }
-\note{ 
-}
 \seealso{  See also \code{\link{p.flow_comp}} }
 \examples{
   #Uniform rain

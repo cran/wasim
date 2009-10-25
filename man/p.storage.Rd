@@ -45,17 +45,10 @@ p.balance(data, xdata, measured, plot = TRUE, flows = c(7, 10,
   \item{\dots}{ Additional arguments passed to plot }
 
 }
-\details{
-}
 \value{
  Used for its function of creating a plot
 }
-\references{  }
 \author{ Dominik Reusser}
-\note{ 
-
-}
-\seealso{  }
 \examples{
 d.datum <- read.dates(file= system.file("weisseritz/qgesww100.txt", package="wasim"))  # Datumsreihe heisst jetzt d.datum
 d.wasim.out <- read.results("", system.file("weisseritz", package="wasim"),ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 

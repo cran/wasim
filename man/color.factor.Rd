@@ -13,12 +13,9 @@ color.factor(color, value, max)
   \item{value}{ A vector of values }
   \item{max}{ The maximum value represented by full intensity }
 }
-\details{
-}
 \value{
  A vector of colors, one entry for each value
 }
-\references{ }
 \author{ Dominik Reusser }
 \examples{
    data <- 1:10

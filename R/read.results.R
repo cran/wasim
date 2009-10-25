@@ -37,7 +37,7 @@ for (i in read.files.nr ){
    cat("\n")
 
    #t.data[,i,] <- myRead.table(name, subcatchments, has_stat=data.types.has_stat[i], ts.length, na.values) #load file
-   t.data[1:(subcatchments+data.types.has_stat[i]),i,] <- myRead.table(name, subcatchments, has_stat=data.types.has_stat[i], ts.length, na.values) #load file
+   try(t.data[1:(subcatchments+data.types.has_stat[i]),i,] <- myRead.table(name, subcatchments, has_stat=data.types.has_stat[i], ts.length, na.values)) #load file
    
  }
 }

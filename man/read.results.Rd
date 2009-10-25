@@ -43,14 +43,14 @@ read.observations(filelist, path = "wasim/input", gauge_names = NULL,
 	\item{date_modelled}{timespan that will be extracted}
 }
 \details{
-  read.results causes error messages
-   \item{"...line n hasn't m elements..."}{The global variable data.types\$has\_stat specifies an statistics column in one of the output files where there is none.}
-   \item{"...has length  14 expecting length 15 - filling ..."}{ The global variable data.types\$has\_stat specifies no statistics column in one of the output files where there seems to be one.}
+  read.results causes error messages:
+   "...line n hasn't m elements..." The global variable data.types\$has\_stat specifies an statistics column in one of the output files where there is none.
+
+   "...has length  14 expecting length 15 - filling ..." The global variable data.types\$has\_stat specifies no statistics column in one of the output files where there seems to be one.
 }
 \value{
   \item{date_vec}{vector of POSIX-dates}
 }
-\references{ ~put references to the literature/web site here ~ }
 \author{ Dominik Reusser, Till Francke }
 \seealso{  \code{\link{p.storage}} }
 \examples{

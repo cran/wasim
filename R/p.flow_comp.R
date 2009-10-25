@@ -64,7 +64,7 @@ baseflow_row=8, legend.position= "right",...){
     axis(4)
     mtext(side= 4, line=2, text="rain/mm" )
 
-    line_sumrain(xdata=xdata, cum_sum = cumsum(data[crain,])/10, theMax=rain.max, col="grey")
+    try(line_sumrain(xdata=xdata, cum_sum = cumsum(data[crain,])/10, theMax=rain.max, col="grey"))
 
   legend(legend.position,legend= data.names,lty=1, lwd=l.flow_com, col=c.flow_com,bty="n", cex=0.9)
 

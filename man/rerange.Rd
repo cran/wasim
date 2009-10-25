@@ -17,17 +17,10 @@ rerange(data, min.goal = 0, max.goal = 1, min.data =
   \item{max.data}{ old maximum value }
   \item{center}{which old value should become the new center ( (max.goal + min.goal) / 2 )}
 }
-\details{
-}
 \value{
   vector with the transformed data
 }
-\references{ }
 \author{ Dominik Reusser }
-\note{ 
-
-}
-\seealso{ }
 \examples{
    rerange(data=1:20)
    rerange(data=1:30, center=5)

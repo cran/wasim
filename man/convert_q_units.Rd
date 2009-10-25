@@ -10,7 +10,6 @@
 \usage{
 convert_q_units (infile, outfile, gauges_area_file, convert_to, timestep_sec)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{infile}{ name of file holding discharge data in WASIM format}
   \item{outfile}{ name of file to produce containing the converted discharge}
@@ -19,12 +18,9 @@ convert_q_units (infile, outfile, gauges_area_file, convert_to, timestep_sec)
   \item{convert_to}{ "specific": convert m3/s to mm; "absolute": convert mm to m3/s}
   \item{timestep_sec}{ length of timestep in inout file in seconds}
 }
-\details{
-}
 \value{
   no return value
 }
-\references{  }
 \author{ Till Francke }
 \seealso{  \code{\link{read.results}} }
 \examples{

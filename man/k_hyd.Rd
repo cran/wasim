@@ -10,15 +10,11 @@ k_hyd(x)
 \arguments{
   \item{x}{ discharge time serie  }
 }
-\details{
-}
 \value{
 Vector of recession constants.
 }
 \references{ Blume Recession Paper }
 \author{ Dominik Reusser}
-\note{}
-\seealso{  \code{\link{diagnostic}} }
 \examples{
 
    data(example.peaks,package="wasim")

@@ -1,4 +1,4 @@
-`rmse` <-
+rmse <-
 function (a, b, cond = rep(TRUE, NROW(a))){
 
 cond[is.na(a)] <- FALSE

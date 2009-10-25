@@ -6,20 +6,16 @@
 Visualisation and analysis of output files of the hydrological model WASIM
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+Visualisation and analysis of output files of the hydrological model WASIM
 }
 \details{
 \tabular{ll}{
 Package: \tab wasim\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2007-09-11\cr
-License: \tab What license is it under?\cr
+Version: \tab 1.0\cr
+Date: \tab 2008-12-16\cr
+License: \tab GPL-2\cr
 }
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
-
 
 }
 \author{
@@ -27,14 +23,9 @@ Dominik Reusser
 
 Maintainer: Dominik Reusser <dreusser@uni-potsdam.de>
 }
-\references{
-~~ Literature or other references for background information ~~
-}
 \keyword{ hplot }
 \keyword{ utilities }
 \keyword{package}
-\seealso{
-}
 \examples{
 
 d.datum <- read.dates(file= system.file("weisseritz/qgesww100.txt", package="wasim"))  # Datumsreihe heisst jetzt d.datum

@@ -15,19 +15,14 @@
   The format for the reference.peak is:
  num [1:91] 0.135 0.134 0.134 0.134 0.134 ...
 }
-\details{
-}
-\source{
-}
-\references{
-}
 \examples{
 data(example.peaks)
 str(example.peaks)
 str(reference.peak)
 plot(reference.peak,type="line")
 lines(example.peaks[,1], lty=2)
-diagnostic(measured = reference.peak, modelled = example.peaks[1,])
+require(tiger)
+diagnostic_dawson(measured = reference.peak, modelled = example.peaks[1,])
 ## maybe str(peaks) ; plot(peaks) ...
 }
 \keyword{datasets}
