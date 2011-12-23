@@ -50,9 +50,10 @@ p.balance(data, xdata, measured, plot = TRUE, flows = c(7, 10,
 }
 \author{ Dominik Reusser}
 \examples{
-d.datum <- read.dates(file= system.file("weisseritz/qgesww100.txt", package="wasim"))  # Datumsreihe heisst jetzt d.datum
-d.wasim.out <- read.results("", system.file("weisseritz", package="wasim"),ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
-d.meas.all<-read.table(system.file("weisseritz/ww100-rh.txt", package="wasim"),header=TRUE, na.strings ="999", skip=4)  # gemessene Daten einlesen
+  unzip(system.file("weisseritz.zip", package="wasim"))
+d.datum <- read.dates(file= "weisseritz/qgesww100.txt")  # Datumsreihe heisst jetzt d.datum
+d.wasim.out <- read.results("", "weisseritz",ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
+d.meas.all<-read.table("weisseritz/ww100-rh.txt",header=TRUE, na.strings ="999", skip=4)  # gemessene Daten einlesen
 d.meas<-d.meas.all$Ammelsdorf[69716:91652]
 p.storage(d.wasim.out, xdata=d.datum, measured=d.meas)
 }

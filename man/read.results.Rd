@@ -15,7 +15,7 @@ read.results(record, path = "wasim/output",
                  "999.00"), read.files.nr = 1:nrow(data.types),
                  remove.missing = FALSE)
 
-date_vect=read.dates(file=NULL,na.strings=c("999", "999.00","-9999.00"),sep="\t")
+read.dates(file=NULL,na.strings=c("999", "999.00","-9999.00"),sep="\t", skip=3)
 
 read.observations(filelist, path = "wasim/input", gauge_names = NULL,
                  date_modelled = NULL, na.strings = c("999", "999.00",
@@ -38,6 +38,7 @@ read.observations(filelist, path = "wasim/input", gauge_names = NULL,
   \item{sep}{ field separator in input file}
   \item{remove.missing}{ boolean indication whether to remove an entry
   from the default data.types if a file was not found}
+  \item{skip}{ number of lines to skip from the header}
 	\item{filelist}{list of input files to be considered}
 	\item{gauge_names}{names of gauges that should be read (NULL:read all)}
 	\item{date_modelled}{timespan that will be extracted}
@@ -54,10 +55,11 @@ read.observations(filelist, path = "wasim/input", gauge_names = NULL,
 \author{ Dominik Reusser, Till Francke }
 \seealso{  \code{\link{p.storage}} }
 \examples{
-d.datum <- read.dates(file= system.file("weisseritz/qgesww100.txt", package="wasim"))  # Datumsreihe heisst jetzt d.datum
+  unzip(system.file("weisseritz.zip", package="wasim"))
+d.datum <- read.dates(file= "weisseritz/qgesww100.txt")  # Datumsreihe heisst jetzt d.datum
 str(d.datum)
 
-d.wasim.out <- read.results("", system.file("weisseritz", package="wasim"),ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
+d.wasim.out <- read.results("", "weisseritz",ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
 
 str(d.wasim.out)
 }

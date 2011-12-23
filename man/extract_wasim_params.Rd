@@ -5,7 +5,7 @@
   retrieves desired parameters (currently limited to soil\_model and snow\_model) from WASIM control file
 }
 \usage{
-params=extract_wasim_params(wasim_param_file,param_list)
+extract_wasim_params(wasim_param_file,param_list)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

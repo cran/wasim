@@ -33,7 +33,8 @@ read.grid(file, record_size=4)
 \seealso{  \code{\link{read.results}}, \code{\link{p.flow_comp}} for more WaSiM related function.
   \code{\link{filled.contour}} for plotting options}
 \examples{
-  sd.grid <- read.grid( file= system.file("weisseritz/sd__ww100.grd", package="wasim"))  # Datumsreihe heisst jetzt d.datum
+  unzip(system.file("weisseritz.zip", package="wasim"))
+  sd.grid <- read.grid( file= "weisseritz/sd__ww100.grd")  # Datumsreihe heisst jetzt d.datum
   p.grid(sd.grid, 
         color.palette=topo.colors,
 	      zlim=c(-20,20),

@@ -28,13 +28,15 @@ Maintainer: Dominik Reusser <dreusser@uni-potsdam.de>
 \keyword{package}
 \examples{
 
-d.datum <- read.dates(file= system.file("weisseritz/qgesww100.txt", package="wasim"))  # Datumsreihe heisst jetzt d.datum
-d.wasim.out <- read.results("", system.file("weisseritz", package="wasim"),ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
-d.meas.all<-read.table(system.file("weisseritz/ww100-rh.txt", package="wasim"),header=TRUE, na.strings ="999", skip=4)  # gemessene Daten einlesen
+  unzip(system.file("weisseritz.zip", package="wasim"))
+
+d.datum <- read.dates(file= "weisseritz/qgesww100.txt")  # Datumsreihe heisst jetzt d.datum
+d.wasim.out <- read.results("", "weisseritz",ts.length=21937,subcatchments=2, ending="ww100.txt")    # Datensatz heisst jetzt d.wasim.out 
+d.meas.all<-read.table("weisseritz/ww100-rh.txt",header=TRUE, na.strings ="999", skip=4)  # gemessene Daten einlesen
 d.meas<-d.meas.all$Ammelsdorf[69716:91652]
 p.storage(d.wasim.out, xdata=d.datum, measured=d.meas)
 
-sd.grid <- read.grid( file= system.file("weisseritz/sd__ww100.grd", package="wasim"))  # Datumsreihe heisst jetzt d.datum
+sd.grid <- read.grid( file= "weisseritz/sd__ww100.grd")  # Datumsreihe heisst jetzt d.datum
 p.grid(sd.grid, 
         color.palette=topo.colors,
 	      zlim=c(-20,20),
