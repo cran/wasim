@@ -9,13 +9,14 @@
 }
 \usage{
 p.grid(grid, ...)
-read.grid(file, record_size=4)
+read.grid(file, record_size=4, endian="little")
 }
 \arguments{
   \item{grid}{ A grid read with the read.grid function }
   \item{\dots}{ Additional arguments passed to plot }
   \item{file}{ WASIM grid output file in ASCII or binary format.}
   \item{record_size}{ number of bytes used to represent a float value in the binary grid. Usually 4, but may be platform-dependent.}
+  \item{endian}{ see \code{\link{readBin}}}
   
 }
 \details{

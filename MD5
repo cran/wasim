@@ -1,4 +1,4 @@
-2f922475f941075cd8ef6e91225778b9 *DESCRIPTION
+c02f2acf29b21805ce60ddb48ee3b1e4 *DESCRIPTION
 be340e06edffcda3f0569df8b31935bf *NAMESPACE
 2b52e4f2759b2df8bbd7eeb0b2750120 *R/assemble.date.R
 853f1937a4050d8f94c00c97d46f1515 *R/bias.R
@@ -18,7 +18,7 @@ f10af2477ea41ba8dfb18e46746c2a25 *R/k_hyd.R
 a559911f5303d78cbdebb0961bb9d449 *R/p.grid.R
 ab6bbaf55d15658c04c9c7f79fb376f3 *R/p.storage.R
 35564ac0deb9345f675b4aa81b2fafaa *R/read.dates.R
-ace36e2c149562122ef7998c1fd60ff6 *R/read.grid.R
+73e8137b5d162c39c707e3d76e0e99eb *R/read.grid.R
 257f9b894f9ee541aed3fa1f1e7cad2e *R/read.observations.R
 746fba20962ec2e2dfc27038e607ee65 *R/read.results.R
 c2d58fd1d57d917e704c691f932e53ac *R/rerange.R
@@ -43,7 +43,7 @@ cb3552553b0ed787290011d70b6e811c *man/example.peaks.Rd
 cec5ff59faf4138f6ef65dd0571ff358 *man/max_rel_diff.Rd
 51521cab993926f15e908c5e212c03ec *man/models_dawson.Rd
 d11ba5d50332c1fe4b9daf6bd639e114 *man/myRead.table.Rd
-f590ab2d83f071f9537ed7581618cda8 *man/p.grid.Rd
+f1079a303bd1d4c9d865349fded04a13 *man/p.grid.Rd
 fbab46df37aff1744c904e1de06e6d29 *man/p.storage.Rd
 693afde7e9d4ced5cfe1ed356eb3ac32 *man/read.results.Rd
 70bb5f6ff1b7c856d845a94b369b8ea5 *man/rerange.Rd

@@ -1,4 +1,4 @@
-read.grid <- function(file,record_size=4){
+read.grid <- function(file,record_size=4, endian="little"){
 
   if (!is.na(grep(".asc$", file, ignore.case = TRUE) || grep(".ascii$", file, ignore.case = TRUE) || grep(".txt$", file, ignore.case = TRUE)))
   { #read ASCII
@@ -14,7 +14,7 @@ read.grid <- function(file,record_size=4){
   else
   {   #read binary grid
     zz <- file(file, "rb")
-    tab=readBin(zz, numeric(),size=record_size,n= 12) #read header
+    tab=readBin(zz, numeric(),size=record_size,n= 12, endian=endian) #read header
     
     nncols       = tab[1] #retrieve header information
     nnrows       = tab[2]
@@ -25,7 +25,7 @@ read.grid <- function(file,record_size=4){
     myhead=tab[1:6] 
     names(myhead)= c("ncols","nrows","xllcorner","yllcorner","cellsize","nodata_value")
     
-    tab=readBin(zz, numeric(),size=record_size,n= nncols*nnrows)  #read actual content
+    tab=readBin(zz, numeric(),size=record_size,n= nncols*nnrows, endian=endian)  #read actual content
     close(zz)
     dim(tab)=c(nncols,nnrows) #rearrange to matrix
   } 
